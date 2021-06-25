@@ -24,13 +24,13 @@ export default function App() {
         setCurrentNumber((fistNumber + lastNumber).toString())
         return
       case '-': 
-        setCurrentNumber((fistNumber - lastNumber).toString())
+        setCurrentNumber((fistNumber - lastNumber).toString()) 
         return
       case 'x':
-        setCurrentNumber((fistNumber + lastNumber).toString())
+        setCurrentNumber((fistNumber * lastNumber).toString()) //Problema resolvido
         return
       case '/': 
-        setCurrentNumber((fistNumber - lastNumber).toString())
+        setCurrentNumber((fistNumber / lastNumber).toString()) //Problema resolvido
         return
     }
   }
@@ -43,7 +43,7 @@ export default function App() {
     }
     switch(buttonPressed){
       case 'DEL':
-        setCurrentNumber(currentNumber.substring(0, (currentNumber.length - 2)))
+        setCurrentNumber(currentNumber.substring(0, (currentNumber.length - 1))) //Problema resolvido
         return
       case 'LIMPAR': // Limpa todo o conteúdo
         setLastNumber("") 
