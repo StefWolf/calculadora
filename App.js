@@ -27,10 +27,10 @@ export default function App() {
         setCurrentNumber((fistNumber - lastNumber).toString())
         return
       case 'x':
-        setCurrentNumber((fistNumber + lastNumber).toString())
+        setCurrentNumber((fistNumber * lastNumber).toString())  //Corrigido
         return
       case '/': 
-        setCurrentNumber((fistNumber - lastNumber).toString())
+        setCurrentNumber((fistNumber / lastNumber).toString())  //Corrigido
         return
     }
   }
@@ -101,14 +101,14 @@ const styles = StyleSheet.create({
   },
   resultText: {
     color: "#282F38",
-    fontSize: 32,
+    fontSize: RFPercentage(8),
     fontWeight: "bold",
     padding: 12,
     textAlign: "right"
   },
   historyText:{
     color: "#7c7c7c",
-    fontSize: 20,
+    fontSize: RFPercentage(4),
     marginRight: 10,
     alignSelf: 'flex-end',
   },
@@ -120,12 +120,12 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
-    minWidth: wp('17%'),
-    minHeight: hp('17%'),
+    minWidth: wp('23%'),
+    minHeight: hp('15%'),
     flex: 2,
   },
   textButton: {
     color: "#7c7c7c",
-    fontSize: RFPercentage(3),
+    fontSize: RFPercentage(4),
   } 
 });
