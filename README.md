@@ -44,3 +44,4 @@ Nesta atividade, você será avaliado nos indicadores:
     Corrige erros e falhas de acordo com o relatório de testes da aplicação para dispositivos móveis.
     Registra os resultados e as alterações dos processos de teste e manutenção, de acordo com as melhorias implantadas na aplicação para dispositivos móveis.
 
+OBS: Stefany é doida rsrsr
